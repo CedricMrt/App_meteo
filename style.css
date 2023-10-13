@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Zen Dots", cursive;
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #0f0f0f, #1a1a1a);
+}
+
+#container {
+  background: url(./img/sunny.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80%;
+  max-width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.5rem;
+  border-radius: 50px;
+  box-shadow: 10px -10px 20px #050505, -10px 10px 20px #2d2d2d;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18rem;
+}
+
+input {
+  width: 13rem;
+  padding-left: 0.5rem;
+  border: none;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #faeb82;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 6px;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 18px;
+}
+
+button {
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  margin-left: 0.5rem;
+  background-color: #faeb82;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 6px;
+}
+
+button:hover {
+  background-color: #aaaaaa;
+  color: #faeb82;
+}
+
+button:active {
+  transform: translateY(0.2rem);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px;
+}
+
+section {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.8rem;
+}
+
+#city {
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 4px;
+}
+
+#date {
+  font-size: 13px;
+}
+
+#temp {
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 2px 5px 4px #010101;
+}
+
+#climate {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 4px;
+}
+
+#wind {
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: rgba(0, 0, 0, 0.2) 0 4px;
+}
